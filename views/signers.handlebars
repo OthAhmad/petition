@@ -1,0 +1,13 @@
+<a href="/logout">Logout</a>
+
+
+
+<h1 class="h1">This are all the pepole who signed the petition</h1>
+
+
+<div class="signers">
+    {{#signers}}
+        <p>{{first}} {{last}} {{age}} <a href="/signers/{{city}}">{{city}}</a>
+        <a href="{{url}}">{{url}}</a></p>
+    {{/signers}}
+</div>

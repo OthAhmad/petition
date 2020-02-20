@@ -1,0 +1,20 @@
+
+<h1 class="h1 register">Please Signup</h1>
+
+<img src="weed.jpeg" class="weed">
+
+{{#if err}}
+<p id="error">Something went wrong... Please sign up again!</p>
+{{/if}}
+
+<form method="POST">
+     <input type="text" name="first" placeholder="Fist Name" autocomplete="off">
+     <input type="text" name="last" placeholder="Last Name" autocomplete="off">
+     <input type="text" name="email" placeholder="E-mail address" autocomplete="off">
+     <input type="password" name="password" placeholder="Password" autocomplete="off">
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+     <button name="sign-up">Sign up</button>
+ </form>
+
+
+ <p class="a-signers">If you are already registered, please <a href="/login">login</a></p>

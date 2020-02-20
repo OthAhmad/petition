@@ -1,0 +1,16 @@
+<h1 class="h1 petition">Please sign the Petition to legalize weed Everywhere</h1>
+
+<img src="petition.jpg" class="petition" >
+
+<form method="post">
+    {{#if err}}
+    <p id="error">You must fill all input fields to continue...</p>
+    {{/if}}
+    <div class="inputs">
+        <h2>{{first}} {{last}}</h2>
+    </div>
+    <input id="input-sign"type="hidden" name="signature" value="">
+    <canvas id="canvas"width="350" height="100"></canvas>
+     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="submit-btn">Submit</button>
+</form>

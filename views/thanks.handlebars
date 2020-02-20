@@ -1,0 +1,21 @@
+<a href="/logout">Logout</a>
+
+<h1 class="h1-thanks">Thank you for signing</h1>
+
+<img src="weed.jpeg" class="weed">
+
+<img class="sig-img" src="{{ sig }}" >
+
+
+<a class="a-signers" href="/signers">There is also {{count}} signed The Petition</a>
+<a class="a-signers" href="/profile/edit"> Edit Your profile</a>
+
+<form action="/profile/delete" method="POST">
+    <button class="submit-btn" name="delete-signature">Delete your profile</button>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>
+
+<form action="/delete-sig" method="POST">
+       <button class="submit-btn" name="delete-sig">Delete your signature</button>
+       <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>

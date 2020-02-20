@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS sig;
+
+CREATE TABLE sig(
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE NOT NULL,
+    sig TEXT NOT NULL CHECK (sig <> '')
+);

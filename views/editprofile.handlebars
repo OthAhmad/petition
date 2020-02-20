@@ -1,0 +1,24 @@
+<a href="/logout">Logout</a>
+
+
+
+<div class="edit-inputs">
+    <form method="POST">
+        <p class="profile-info">First name:</p>
+        <input  type="text" name="first" value="{{first}}">
+        <p class="profile-info">Last name:</p>
+        <input  type="text" name="last" value="{{last}}" placeholder="Your last name">
+        <p>Email:</p>
+        <input type="text" name="email" value="{{email}}">
+        <p>Password:</p>
+        <input type="password" name="password" placeholder="*******">
+        <p>Your age:</p>
+        <input type="text" name="age" value="{{age}}">
+        <p>Your city:</p>
+        <input  type="text" name="city" value="{{city}}">
+        <p>Your homepage:</p>
+        <input type="text" name="url" value="{{url}}">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button class="submit-btn">Update your profile</button>
+    </form>
+</div>

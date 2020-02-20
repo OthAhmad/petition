@@ -1,0 +1,19 @@
+<p>Many thanks to the people from <span>{{city}}</span> who support our cause!</p>
+
+    <div class="signers">
+
+    {{#each signers}}
+
+    {{#if url}}
+
+    <p><a href="{{url}}">{{first}} {{last}}</a> {{age}}</p>
+
+    {{else}}
+
+    <p>{{first}} {{last}} {{age}}</p>
+
+    {{/if}}
+
+    {{/each}}
+
+</div>

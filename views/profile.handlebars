@@ -1,0 +1,16 @@
+
+
+<div class="profile">
+    <h1>Hi <strong>{{first}}</strong>! Please tell us a bit more about yourself:</h1>
+
+    <form method="POST">
+        <p class="profile-info">Your age</p>
+        <input type="text" name="age">
+        <p class="profile-info">Your city</p>
+        <input type="text" name="city">
+        <p class="profile-info">Your homepage</p>
+        <input type="text" name="homepage">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button name="continue">Create profile</button>
+    </form>
+</div>

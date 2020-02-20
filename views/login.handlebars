@@ -1,0 +1,18 @@
+
+<h1 class="h1 login">Please Login  to sign The Petition</h1>
+
+<img src="petition.jpg" class="petition" >
+
+{{#if err}}
+<p id="error">Ops... something went wrong! Please try again or <a href="/register">register here</a></p>
+{{/if}}
+
+
+<form method="POST">
+    <div class="inputs">
+        <input type="text" name="email" placeholder="E-mail address">
+        <input type="password" name="password" placeholder="Password">
+    </div>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button class="submit-btn" name="log-in">Log in</button>
+</form>
